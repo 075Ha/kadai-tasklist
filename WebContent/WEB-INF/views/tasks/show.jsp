@@ -8,7 +8,7 @@
 
         <c:choose>
             <c:when test="${task != null}">
-                <h2>id : ${task.id} -> ${task.content}</h2>
+                <h2>id : ${task.id} => ${task.content}</h2>
                 <table>
                     <tbody>
                         <tr>
