@@ -8,7 +8,7 @@
 
         <c:choose>
             <c:when test="${task != null}">
-                <h2>id : ${task.id} -> Detail</h2>
+                <h2>id : ${task.id} -> ${task.content}</h2>
                 <table>
                     <tbody>
                         <tr>
@@ -17,12 +17,12 @@
                             <td><c:out value="${task.content}" /></td>
                         </tr>
                         <tr>
-                            <th>Created</th>
+                            <th>Created At</th>
                             <td><fmt:formatDate value="${task.created_at}"
                                 pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         </tr>
                         <tr>
-                            <th>Updated</th>
+                            <th>Updated At</th>
                            <td> <fmt:formatDate value="${task.updated_at}"
                                 pattern="yyyy-MM-dd HH:mm:ss" /></td>
                         </tr>
